@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>STOP WATCH</title>
+	<script type="text/javascript" src="js/stopwatch.js"></script>
+</head>
+<body>
+	
+	<div id='stopwatch' align="center" style="padding: 25px; background-color: #ea923ab0">
+		<h1 align="center">STOP  WATCH</h1>
+		<div>
+			<div>
+				<input type="text" name="t1" id="t1" placeholder="--" style="padding: 5px;" /> Min
+				<input type="text" name="t2" id="t2" placeholder="--"style="padding: 5px;"/> Secs
+				<input type="text" name="t3" id="t3" placeholder="--" style="padding: 5px;"/> mSecs
+			</div>
+			<div style="padding: 25px">
+				<input type="button" name="btn1" value="Start" onclick="start()" style="padding: 10px 25px; border-radius: 15px; background-color: #ff5b00d4;  color: #fff; font-family: arial; font-size: 15px; font-weight: 300px;" />
+				<input type="button" name="btn2" value="Stop" onclick="stop()" style="padding: 10px 25px; border-radius: 15px; background-color: #020202d4;  color: #fff; font-family: arial; font-size: 15px; font-weight: 300px;"/>
+				<input type="button" name="btn3" value="Lap" onclick="lap()" style="padding: 10px 25px; border-radius: 15px; background-color: #5577eaf5;  color: #fff; font-family: arial; font-size: 15px; font-weight: 300px;" />
+				<input type="button" name="btn4" value="Reset" onclick="reset()" style="padding: 10px 25px; border-radius: 15px; background-color: #45ade6f5;  color: #fff; font-family: arial; font-size: 15px; font-weight: 300px;"/>
+			</div>
+		</div>
+
+	<div align="center" style="background-color: #696969; padding: 10px; color: #fff; font-family: arial;" >
+		<h1 id='hmin' align="left" style="margin-left: 550px">00</h1>
+		<h1 id='hsec' style="margin-top: -58px;">00</h1>
+		<h1 id='hmsec' style="margin-top: -58px; margin-left: 180px">00</h1>
+
+	</div>
+	<div id="divlap">
+		
+	</div>
+	</div>
+</body>
+</html>
